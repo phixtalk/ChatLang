@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorShade">#334353</color>
+    <color name="colorWhite">#FFF</color>
+    <color name="holo_blue_dark">#FFF</color>
+    <color name="darker_gray">#000</color>
+
+    <color name="loader_bg">#808080</color>
+
+    <color name="chat_bg">#c7dae6</color>
+
+    <color name="txt_font">#4e5572</color>
+    <color name="link">#000</color><!--0a80d1-->
+    <color name="copyright">#334353</color>
+    <color name="failed_msg">#d73925</color>
+    <color name="success_msg">#2E7D32</color>
+    <color name="offline_color">#757575</color>
+    <color name="colorWarning">#d73925</color>
+    <!--ffa500--><!--ff5607-->
+    <color name="feed_bg">#f0f0f0</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="action_bar">#1f2649</color>
+
+    <color name="welcome_bg">#fefefe</color>
+
+    <!-- IntroScreen background color-->
+    <color name="bg_slider_screen1">#f4b241</color>
+    <color name="bg_slider_screen2">#16bc7d</color>
+    <color name="bg_slider_screen3">#203d8c</color>
+    <!-- dots inactive colors -->
+    <color name="dot_inactive_screen1">#ffa000</color>
+    <color name="dot_inactive_screen2">#008c57</color>
+    <color name="dot_inactive_screen3">#0e1e49</color>
+    <color name="dot_inactive_screen4">#0a80d1</color>
+    <!-- dots active colors -->
+    <color name="dot_active_screen1">#f9c772</color>
+    <color name="dot_active_screen2">#74f7c5</color>
+    <color name="dot_active_screen3">#3a67e0</color>
+    <color name="dot_active_screen4">#334353</color>
+    <array name="array_dot_active">
+        <item>@color/dot_active_screen4</item>
+        <item>@color/dot_active_screen4</item>
+        <item>@color/dot_active_screen4</item>
+        <item>@color/dot_active_screen4</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/dot_inactive_screen4</item>
+        <item>@color/dot_inactive_screen4</item>
+        <item>@color/dot_inactive_screen4</item>
+        <item>@color/dot_inactive_screen4</item>
+    </array>
+</resources>

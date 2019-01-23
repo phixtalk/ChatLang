@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_invite"
+        android:title="Invite Friends"
+        android:tint="@color/colorWhite"
+        android:icon="@drawable/ic_person_add_black_24dp"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_groups"
+        android:title="See Groups"
+        android:tint="@color/colorWhite"
+        android:icon="@drawable/ic_group_black_24dp"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="107"
+        android:title="Settings"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_all_groups"
+        android:orderInCategory="101"
+        android:title="See All Groups"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_feedback"
+        android:orderInCategory="102"
+        android:title="Feedback"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="103"
+        android:title="About Chatlang"
+        app:showAsAction="never"/>
+
+</menu>

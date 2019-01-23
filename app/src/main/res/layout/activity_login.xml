@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    tools:context="com.chatlang.LoginActivity"
+    tools:showIn="@layout/activity_login"
+    android:background="@drawable/l_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dots_height">
+        <!-- Login progress -->
+        <ProgressBar
+            android:id="@+id/login_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+        <com.chatlang.view.CustomFontsView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/info"
+            android:fontFamily="@string/font_family"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/tendp"
+            android:textColor="@color/failed_msg"
+            />
+        <com.chatlang.view.CustomFontsView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:fontFamily="@string/font_family"
+            android:textColor="@color/failed_msg"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dots_height"
+        android:paddingBottom="@dimen/dots_height"
+        android:paddingLeft="@dimen/thirtydp"
+        android:paddingRight="@dimen/thirtydp"
+        android:paddingTop="@dimen/dots_height">
+        <!-- Add App Logo-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/logo" />
+        <com.chatlang.view.CustomFontsView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="@dimen/desc_padding"
+            android:text="@string/app_slogan"
+            android:textAlignment="center"
+            android:textColor="@color/dot_inactive_screen3"
+            android:textSize="@dimen/slide_desc" />
+
+        <com.chatlang.view.CustomFontsEdit
+            android:id="@+id/chatname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person"
+            android:singleLine="true"
+            android:hint="Your Chat Name"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:maxLines="1"
+            />
+        <com.chatlang.view.CustomFontsEdit
+            android:id="@+id/phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/ic_phone"
+            android:hint="Your Phone Number"
+            android:imeActionId="@+id/login"
+            android:imeActionLabel="Login"
+            android:imeOptions="actionUnspecified"
+            android:inputType="phone"
+            android:maxLines="1" />
+        <com.chatlang.view.CustomFontsEdit
+            android:id="@+id/smscode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/ic_phone"
+            android:hint="Enter SMS Code Here"
+            android:imeActionId="@+id/login"
+            android:imeActionLabel="Login"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text"
+            android:visibility="gone"
+            android:maxLines="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tendp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/email_sign_in_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Signin"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:textSize="@dimen/eighteendp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginRight="2dp" />
+
+            <Button
+                android:id="@+id/verify_auth_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Verify SMS"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:textSize="@dimen/eighteendp"
+                android:layout_marginTop="@dimen/fifteendp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifteendp"
+            android:orientation="horizontal">
+            <com.chatlang.view.CustomFontsView
+                android:id="@+id/action_resend_smscode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColorLink="@color/link"
+                android:textColor="@color/link"
+                android:fontFamily="@string/font_family"
+                android:visibility="gone"
+                android:text="Didn't Get SMS? Tap here to Resend SMS." />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

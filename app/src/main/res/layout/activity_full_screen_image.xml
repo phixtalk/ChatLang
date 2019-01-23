@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    tools:context="com.chatlang.view.FullScreenImageActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        style="@style/FullScreen.TextAppearance.Title"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        tools:ignore="UnusedAttribute">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="@dimen/fivedp"
+            tools:ignore="UnusedAttribute" />
+
+        <com.chatlang.view.CustomFontsView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="PrivateResource"
+            style="@style/FullScreen.TextAppearance.Title.Inverse"
+            android:layout_gravity="center_vertical|start" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.chatlang.view.TouchImageView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
+</RelativeLayout>

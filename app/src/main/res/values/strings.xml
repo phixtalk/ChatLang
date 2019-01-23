@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ChatLang</string>
+    <string name="base_url">http://www.phixsoft.com.ng/chatlang/</string>
+    <string name="font_family">fonts/AvenirLTStd-Book.otf</string>
+    <string name="app_slogan">...experience chat at its best!</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="no_connection">No connection. Please try again.</string>
+    <string name="select_picture_title">Get Photo From</string>
+
+    <string name="sendPhotoGallery">Photo Gallery</string>
+    <string name="sendLocation">Send Location</string>
+</resources>

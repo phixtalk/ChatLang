@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.chatlang.CircularNetworkImageView
+            android:id="@+id/custom_bar_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/default_avatar">
+        </com.chatlang.CircularNetworkImageView>
+        <!--
+            android:layout_marginTop="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+        -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <com.chatlang.view.CustomFontsView
+                android:id="@+id/custom_bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Display Name"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+            <!--android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"-->
+
+            <com.chatlang.view.CustomFontsView
+                android:id="@+id/custom_bar_seen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/custom_bar_title"
+                android:text="Last Seen"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+            <!--android:layout_alignParentStart="true"-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

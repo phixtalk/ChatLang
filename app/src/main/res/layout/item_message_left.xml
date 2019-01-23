@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="@dimen/fivedp"
+    android:clickable="true">
+
+    <ImageView
+        android:layout_alignBottom="@+id/contentMessageChat"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/ivUserChat"
+        android:visibility="gone"/>
+
+    <me.himanshusoni.chatmessageview.ChatMessageView
+        android:id="@+id/contentMessageChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/chat_msg_space"
+        android:layout_marginBottom="@dimen/chat_msg_space"
+        app:cmv_backgroundColor="#fff"
+        app:cmv_backgroundColorPressed="#FFBABABA"
+        app:cmv_arrowGravity="end"
+        app:cmv_arrowPosition="left"
+        app:cmv_cornerRadius="3dp"
+        app:cmv_showArrow="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ivUserChat">
+
+        <com.chatlang.view.CustomFontsView
+            android:text="Username"
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/thirteendp"
+            android:visibility="gone"
+            android:textColor="@color/success_msg"
+
+            android:textStyle="bold"/>
+
+    <!--hani.momanii.supernova_emoji_library.Helper.EmojiconTextView-->
+        <!--emojicon:emojiconSize="28sp"-->
+    <com.chatlang.emoji.EmojiconTextView
+        android:id="@+id/txtMessage"
+        android:layout_below="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:text="sabi.ai sabi \n sabi.ai \sabi.ai"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <com.chatlang.view.CustomFontsView
+            android:text="01/10/2018"
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_below="@+id/txtMessage"
+            android:layout_toEndOf="@+id/ivUserChat" />
+        <!--
+        android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"-->
+
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+
+</RelativeLayout >

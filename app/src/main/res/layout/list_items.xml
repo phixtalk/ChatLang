@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/tendp"
+            android:paddingBottom="@dimen/tendp">
+
+            <RelativeLayout
+                android:layout_width="75dp"
+                android:layout_height="50dp">
+                <com.chatlang.CircularNetworkImageView
+                    android:id="@+id/profilePic"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/default_avatar"
+                    android:scaleType="fitCenter">
+                </com.chatlang.CircularNetworkImageView>
+                <ImageView
+                    android:id="@+id/onlineBubble"
+                    android:layout_width="@dimen/fifteendp"
+                    android:layout_height="@dimen/fifteendp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/ic_online_24dp"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.chatlang.view.CustomFontsView
+                        android:id="@+id/caption"
+                        android:fontFamily="@string/font_family"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/twentydp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="@dimen/fivedp"
+                        android:textSize="@dimen/eighteendp"
+                        android:textColor="@color/darker_gray"
+                        android:text="User's Name"/>
+                    <com.chatlang.view.CustomFontsView
+                        android:id="@+id/lastseen"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/offline_color"
+                        android:textSize="@dimen/tendp"
+                        android:text="Last Seen: "/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.chatlang.view.CustomFontsView
+                        android:id="@+id/statusMeg"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/offline_color"
+                        android:textSize="@dimen/fifteendp"
+                        android:text="Chat Status: "/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

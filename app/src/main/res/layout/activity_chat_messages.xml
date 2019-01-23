@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!--tools:context="com.chatlang.ChatMessagesActivity"-->
+
+    <!--
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    -->
+    <include layout="@layout/include_progress_overlay"/>
+
+    <com.chatlang.view.CustomFontsView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/link"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/fifteendp"
+        android:visibility="gone"
+        android:text="Sorry, you have not joined any groups yet.
+Create a new group, or join a group from the list of groups"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fivedp"
+        android:layout_marginRight="@dimen/fivedp"
+        android:id="@+id/theListView"
+        android:clickable="true" />
+
+</LinearLayout>
