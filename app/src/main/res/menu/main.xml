@@ -38,4 +38,10 @@
         android:title="About Chatlang"
         app:showAsAction="never"/>
 
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="108"
+        android:title="Logout"
+        app:showAsAction="never"/>
+
 </menu>

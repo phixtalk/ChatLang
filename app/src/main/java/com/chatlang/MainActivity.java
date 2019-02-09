@@ -309,6 +309,11 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(this, GroupsActivity.class);
             startActivity(i);
             return true;
+        }else if(id == R.id.action_logout){
+            FirebaseAuth.getInstance().signOut();
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

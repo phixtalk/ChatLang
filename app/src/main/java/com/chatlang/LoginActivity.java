@@ -347,12 +347,12 @@ public class LoginActivity extends AppCompatActivity {
                                             //save to sql
                                             saveDataToSQL(userId,chatname,phone);
                                             //save to offline
-                                            session.createSessionData(userId,chatname,phone);
                                         }else{//user already has account before, log him in
                                             //String mphonenumber = String.valueOf(dataSnapshot.child("phonenumber").getValue());
                                             //String musernames = String.valueOf(dataSnapshot.child("usernames").getValue());
                                             //session.updateSessionField("accountstatus", maccountstatus);//update session value
                                         }
+                                        session.createSessionData(userId,chatname,phone);
                                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                         startActivity(intent);
                                         finish();
